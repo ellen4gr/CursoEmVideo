@@ -4,4 +4,4 @@
 n1 = int(input('Digite um numero'))
 suc = n1 + 1
 ant = n1 - 1
-print('O numero é: {}, sucessor é: {}, antecessor é: {}'.format(n1, suc, ant))
+print('O numero digitado é: {}, seu sucessor é: {}, e seu antecessor é: {}'.format(n1, suc, ant))
