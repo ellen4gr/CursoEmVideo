@@ -6,5 +6,5 @@ largura = float(input('Qual a largura da parede? '))
 area = largura * altura
 qtdeTinta = area/2
 
-print('Area {:.2f} m² e a quantidade de litros de tinta necessária {:.1f} '.format(
+print('Area {:.2f} m² e a quantidade de litros de tinta necessária para pintar a parede {:.1f} '.format(
     area, qtdeTinta))
