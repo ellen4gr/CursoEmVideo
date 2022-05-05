@@ -4,9 +4,9 @@
 # Quantas letras ao todo (sem considerar espaços)
 # Quantas letras tem o primeiro nome
 
-nome = str(input('Qual seu nome completo? ')).strip()
+nome = str(input('Qual seu nome completo? ')).strip() # strip tira os espaços
 print('Nome com letras maiúsculas: {}'.format(nome.upper()))
 print('Nome com letras minúsculas: {}'.format(nome.lower()))
 print('Total de letras (sem considerar espaços): {}'.format(
-    len(nome)-nome.count(' ')))  # strip tira os espaços
+    len(nome)-nome.count(' ')))  
 print('Quantas letras tem o primeiro nome: {}'.format(nome.find(' ')))
