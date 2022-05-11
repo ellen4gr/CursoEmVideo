@@ -2,17 +2,27 @@
 A media de idade do grupo. Qual o nome do homem mais velho, quantas mulheres têm menos de 20 anos. """
 mediaIdade = 0
 somaIdade = 0
-for i in range(1 , 3):
-    nome = str(input('Qual o nome da {} pessoa? '.format(i)))
-    idade= int(input('Qual a idade da {} pessoa? '.format(i)))
-    sexo=str(input('Qual o sexo da {} pessoa? '.format(i)))
-    somaIdade +=idade
-    mediaIdade= somaIdade / len(idade)
+maiorIdade = 0
+maisVelhoMasc = 0
+nomeMaisVelho = 0
+totalFem = 0
+for i in range(1, 5):
+    nome = str(input('\nQual o nome da {} pessoa? '.format(i)))
+    idade = int(input('Qual a idade da {} pessoa? '.format(i)))
+    sexo = str(input('Qual o sexo da {} pessoa? [M/F] '.format(i))).upper()
+    somaIdade += idade
 
-print(media) 
+    if i == 1 and sexo in "Mm":
+        maisVelhoMasc = idade
+        nomeMaisVelho = nome
+    if sexo in 'Mm' and idade > maisVelhoMasc:
+        maisVelhoMasc = idade
+        nomeMaisVelho = nome
+    if sexo in 'Ff' and idade < 20:
+        totalFem += 1
 
-#print( nome, idade, sexo )
-
-'''media
-maisVelho
-menosVinte'''
+mediaIdade = somaIdade / i
+print('\nA media de idade é: {}'.format(mediaIdade))
+print('O homem mais velho tem: {} anos e se chama {}'.format(
+    maisVelhoMasc, nomeMaisVelho))
+print('Ao todo são {} mulheres menores de 20 anos'.format(totalFem))
