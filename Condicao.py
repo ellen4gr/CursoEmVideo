@@ -1,5 +1,5 @@
-"""Escreva um programa que faça o computador "pensar" em número inteiro antes de 0 5 e feça para o usuário 
-tentardescobri qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário 
+"""Escreva um programa que faça o computador "pensar" em número inteiro antes de 0 5 e peça para o usuário 
+tentar descobri qual foi o número escolhido pelo computador. O programa deverá escrever na tela se o usuário 
 venceu ou perdeu."""
 
 import random
