@@ -2,12 +2,8 @@
 todos os valores e qual foi o maior e menor valores lidos. O programa deve perguntar ao usuário se ele quer
 ou não continuar a digitar valores. 
  """
-qtde = 0
-media = 0
-menorValor = 0
-maiorValor = 0
+qtde = media = menorValor = maiorValor = soma = 0
 resposta = ""
-soma = 0
 
 while resposta in 'Ss':
     num = int(input('Digite um número inteiro: '))
